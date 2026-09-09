@@ -10,7 +10,7 @@ export let browserstackConf = {
         [
             'browserstack',
             {
-                buildIdentifier: '#${BUILD_NUMBER}'
+                buildIdentifier: `#${process.env.GITHUB_RUN_NUMBER || 'local'}`
             }
         ]
     ],

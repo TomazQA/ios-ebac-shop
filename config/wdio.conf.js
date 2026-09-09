@@ -1,8 +1,8 @@
+import 'dotenv/config';
+
 import { localConf } from './local.conf.js'
 import { sauceConf } from './sauce.conf.js'
 import { browserstackConf } from './browserstack.conf.js'
-
-import 'dotenv/config';
 
 function getConfig() {
     switch (process.env.ENVIRONMENT) {
